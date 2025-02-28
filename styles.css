@@ -24,15 +24,20 @@ body {
   background-attachment: fixed;
 }
 
+.what-we-offer-page {
+  background-color: #87CEEB; /* Light blue background */
+}
+
 header {
   background-color: black;
-  padding: 10px 20px;
+  padding: 20px 20px;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center; /* Ensures the items are vertically centered */
+  height: 100%;
 }
 
 nav .logo-container {
@@ -181,4 +186,76 @@ p {
   text-align: left; /* Align text to the left */
   text-justify: inter-word; /* Justify the text */
   color: #000000; /* Dark gray color for the text */
+}
+
+/* Styling for the background color of the page */
+.what-we-offer-page {
+  background-color: #87CEEB; /* Light blue background for this page */
+}
+
+/* Center the content with some padding */
+.what-we-offer-content {
+  padding: 40px 30px;  /* Add space for padding inside the block */
+  background-color: none; /* Light transparent white background */
+  border-radius: 15px; /* Optional: rounded corners */
+  max-width: 800px; /* Limit the width of the content block */
+  margin: 0 auto; /* Center the block horizontally */
+  text-align: left; /* Align the text to the left for the paragraphs */
+  box-shadow: none; /* Add shadow for more depth */
+}
+
+h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 50px; /* Larger font size for the title */
+  margin: 0;
+  padding-bottom: 10px; /* Add space below the heading */
+  color: #000000; /* Dark color for the title */
+}
+
+p {
+  font-size: 18px; /* Slightly smaller font size for paragraphs */
+  line-height: 1.6;
+  margin: 15px 0;
+  text-align: justify; /* Justify the text */
+  color: #333333; /* Dark gray color for the text */
+}
+
+/* Styling for the project gallery */
+.project-gallery {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 20px; /* Add gap between the project boxes */
+}
+
+.project-item {
+  width: 30%;
+  text-align: center;
+  display: block;
+  position: relative;
+  border: 2px solid #333; /* Add a border around each project */
+  border-radius: 10px; /* Rounded corners for the project boxes */
+  overflow: hidden; /* Hide the image overflow */
+}
+
+.project-item img {
+  width: 100%;
+  height: 100%; /* Make sure image covers the full height */
+  object-fit: cover; /* Ensure image covers the box, maintaining aspect ratio */
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover img {
+  transform: scale(1.05); /* Hover effect to zoom in */
+}
+
+.project-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
