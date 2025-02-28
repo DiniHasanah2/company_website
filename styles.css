@@ -2,7 +2,18 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
-  background-color: #87CEEB; /* Light blue background */
+}
+/* Main Page Background */
+.main-page {
+  background-color: #87CEEB; /* Light blue background for the main page */
+}
+
+/* Set background image for the "Who We Are" page */
+.who-we-are-page {
+  background-image: url('assets/whoweare.jpg'); /* Correct path to your image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 header {
@@ -40,6 +51,22 @@ nav li {
 
 nav ul li:first-child {
   margin-right: 0;
+}
+
+
+/* Add these styles to remove link underline and set color to white */
+nav a {
+  text-decoration: none;  /* Removes the underline */
+  color: white;           /* Sets the color to white */
+}
+
+nav a:hover {
+  text-decoration: none;  /* Ensures no underline on hover */
+  color: white;           /* Ensures the color remains white on hover */
+}
+
+nav a:visited {
+  color: white;           /* Keeps the color white when the link has been visited */
 }
 
 .main-content {
@@ -82,17 +109,25 @@ p {
   max-width: 100%; /* Ensures logo doesn't overflow */
 }
 
-/* Add these styles to remove link underline and set color to white */
-nav a {
-  text-decoration: none;  /* Removes the underline */
-  color: white;           /* Sets the color to white */
+
+/* Who We Are page content */
+.who-we-are-content {
+  padding: 50px;  /* Adjust the padding as needed */
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+  border-radius: 10px; /* Optional: Adds rounded corners */
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-nav a:hover {
-  text-decoration: none;  /* Ensures no underline on hover */
-  color: white;           /* Ensures the color remains white on hover */
+h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 40px; /* Adjust size as needed */
 }
 
-nav a:visited {
-  color: white;           /* Keeps the color white when the link has been visited */
+p {
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 20px auto;
 }
