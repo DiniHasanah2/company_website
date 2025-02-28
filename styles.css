@@ -16,6 +16,13 @@ body {
   background-attachment: fixed;
 }
 
+.history-page {
+  background-image: url('assets/history.jpg'); /* Correct path to your image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 header {
   background-color: black;
   padding: 10px 20px;
@@ -89,6 +96,7 @@ h1 {
 p {
   font-size: 20px;
   margin: 10px 0;
+  color: #000000;
 }
 
 .get-started {
@@ -109,25 +117,68 @@ p {
   max-width: 100%; /* Ensures logo doesn't overflow */
 }
 
-
-/* Who We Are page content */
 .who-we-are-content {
-  padding: 50px;  /* Adjust the padding as needed */
-  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
-  border-radius: 10px; /* Optional: Adds rounded corners */
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
+  padding: 40px 30px;  /* Add space for padding inside the block */
+  background-color: none; /* Light transparent white background */
+  border-radius: 15px; /* Optional: rounded corners */
+  max-width: 800px; /* Limit the width of the content block */
+  margin: 0 auto; /* Center the block horizontally */
+  text-align: left; /* Align the text to the left for the paragraphs */
+  box-shadow: none; /* Add shadow for more depth */
 }
 
-h1 {
+h2 {
   font-family: 'Outfit', sans-serif;
-  font-size: 40px; /* Adjust size as needed */
+  font-size: 50px; /* Larger font size for the title */
+  margin: 0;
+  padding-bottom: 10px; /* Add space below the heading */
+  color: #000000; /* Dark color for the title */
 }
 
 p {
-  font-size: 20px;
+  font-size: 18px; /* Slightly smaller font size for paragraphs */
   line-height: 1.6;
-  max-width: 600px;
-  margin: 20px auto;
+  max-width: 600px; /* Limit paragraph width for readability */
+  margin: 15px 0;
+  text-align: left; /* Align text to the left */
+  text-justify: inter-word; /* Justify the text */
+  color: #333333; /* Dark gray color for the text */
+}
+
+/* Specific styles for the History Content section */
+.history-content h1 {
+  color: #000000; /* Change this to your desired color */
+}
+
+.history-content p {
+  color: #333333; /* Change this to your desired color */
+}
+
+/* Existing Styles for h1 and p (from your original code) */
+.history-content {
+  padding: 40px 30px;  /* Add space for padding inside the block */
+  background-color: none; /* Light transparent white background */
+  border-radius: 15px; /* Optional: rounded corners */
+  max-width: 800px; /* Limit the width of the content block */
+  margin: 0 auto; /* Center the block horizontally */
+  text-align: left; /* Align the text to the left for the paragraphs */
+  box-shadow: none; /* Add shadow for more depth */
+}
+
+h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 50px; /* Larger font size for the title */
+  margin: 0;
+  padding-bottom: 10px; /* Add space below the heading */
+  color: #000000; /* Dark color for the title */
+}
+
+p {
+  font-size: 18px; /* Slightly smaller font size for paragraphs */
+  line-height: 1.6;
+  max-width: 600px; /* Limit paragraph width for readability */
+  margin: 15px 0;
+  text-align: left; /* Align text to the left */
+  text-justify: inter-word; /* Justify the text */
+  color: #000000; /* Dark gray color for the text */
 }
