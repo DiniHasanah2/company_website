@@ -14,12 +14,12 @@
             <li>Kuantum Jauhar</li>
           </div>
             <ul>
-                <li>Who we are</li>
-                <li>What we offer</li>
-                <li>Corporate Info</li>
-                <li>History</li>
-                <li>Our Affiliates</li>
-                <li>Contact Us</li>
+                <li><a href="who-we-are.html">Who we are</a></li>
+                <li><a href="what-we-offer.html">What we offer</a></li>
+                <li><a href="corporate-info.html">Corporate Info</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="our-affiliates.html">Our Affiliates</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -27,7 +27,7 @@
         <div class="text-content">
             <h1>We are Kuantum Jauhar</h1>
             <p>Consistency Beats Intensity</p>
-            <button class="get-started">Get Started</button>
+            <a href="who-we-are.html"><button class="get-started">Get Started</button></a>
         </div>
         <div class="logo">
             <img src="assets/logo.png" alt="Kuantum Jauhar Logo">
