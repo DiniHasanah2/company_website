@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Outfit:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">  <!-- Correct path to styles.css -->
+    <title>Our Affiliates</title>
+    <style>
+        body.our-affiliates-page {
+            background-color: #87CEEB; /* Set background color to light blue */
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: black;
+            padding: 20px 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            color: white;
+            margin-left: 20px;
+            font-size: 18px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .our-affiliates-content {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        h2 {
+            font-size: 36px;
+            font-family: 'Outfit', sans-serif;
+            margin-bottom: 40px;
+            color: #000000;
+            text-align: center; 
+        }
+
+        /* Styling for the affiliate logos */
+        .affiliate-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px; /* Space between the logos */
+            flex-wrap: wrap; /* Ensure responsiveness */
+            margin-top: 40px;
+        }
+
+        .affiliate-logo {
+            width: 150px; /* Fixed width for logos */
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .affiliate-logo:hover {
+            transform: scale(1.05); /* Adds zoom effect on hover */
+        }
+
+    </style>
+            </head>
+<body class="our-affiliates-page">  <!-- Correct class here -->
+    <header>
+        <nav>
+          <div class="logo-container">
+            <li><a href="../index.html">Kuantum Jauhar</a></li> <!-- Corrected path to the main page -->
+          </div>
+            <ul>
+                <li><a href="who-we-are.html">Who we are</a></li>
+                <li><a href="what-we-offer.html">What we offer</a></li>
+                <li><a href="corporate-info.html">Corporate Info</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="our-affiliates.html">Our Affiliates</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="who-we-are-content">
+        <h2>Our Affiliates</h2>
+        <div class="affiliate-logos">
+            <img class="affiliate-logo" src="../assets/seelab.png" alt="SEE.LAB Logo">
+            <img class="affiliate-logo" src="../assets/unikl.png" alt="University Logo">
+            <img class="affiliate-logo" src="../assets/mara.png" alt="MARA Logo">
+        </div>
+    </div>
+</body>
+</html>
