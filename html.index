@@ -1,1 +1,37 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Outfit:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Kuantum Jauhar</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="logo-container">
+            <li>Kuantum Jauhar</li>
+          </div>
+            <ul>
+                <li>Who we are</li>
+                <li>What we offer</li>
+                <li>Corporate Info</li>
+                <li>History</li>
+                <li>Our Affiliates</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-content">
+        <div class="text-content">
+            <h1>We are Kuantum Jauhar</h1>
+            <p>Consistency Beats Intensity</p>
+            <button class="get-started">Get Started</button>
+        </div>
+        <div class="logo">
+            <img src="assets/logo.png" alt="Kuantum Jauhar Logo">
+        </div>
+    </div>
+</body>
+</html>
