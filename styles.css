@@ -81,3 +81,18 @@ p {
   width: 400px; /* Set a specific size or use max-width */
   max-width: 100%; /* Ensures logo doesn't overflow */
 }
+
+/* Add these styles to remove link underline and set color to white */
+nav a {
+  text-decoration: none;  /* Removes the underline */
+  color: white;           /* Sets the color to white */
+}
+
+nav a:hover {
+  text-decoration: none;  /* Ensures no underline on hover */
+  color: white;           /* Ensures the color remains white on hover */
+}
+
+nav a:visited {
+  color: white;           /* Keeps the color white when the link has been visited */
+}
