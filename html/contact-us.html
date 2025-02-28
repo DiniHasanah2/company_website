@@ -60,8 +60,79 @@
             color: #000000;
             text-align: center; 
         }
+
+        /* Form Styling */
+        .contact-form {
+            background-color: black;
+            padding: 20px;
+            border-radius: 0;  /* Pointed corners */
+            width: 60%;
+            margin: 0 auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-form .form-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .contact-form .field {
+            width: 48%; /* Ensure equal width for fields */
+        }
+
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            width: 100%; /* Ensure the input fields fill their parent container */
+            margin: 5px 0;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            background-color: white;
+            border-radius: 0;  /* Sharp corners */
+        }
+
+        .contact-form input#phone_number {
+            width: 92%; /* Ensure Phone Number field has the same width */
+        }
+
+        .contact-form textarea {
+            height: 120px;
+        }
+
+        .contact-form button {
+            background-color: #87CEEB;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 0;  /* Sharp corners */
+            color: white;
+            margin-top: 10px;
+            width: 200px;  /* Adjusted width */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-form button:hover {
+            background-color: #6fa3d8;
+        }
+
+        .contact-form label {
+            color: white;
+            font-size: 14px;
+            margin-bottom: 5px;
+            display: block; /* To push the label above the input */
+        }
+
+        /* Ensuring message field is beneath the message label */
+        .contact-form textarea {
+            margin-top: 10px;
+        }
+
     </style>
-            </head>
+</head>
 <body class="contact-us-page">  <!-- Correct class here -->
     <header>
         <nav>
@@ -78,8 +149,40 @@
             </ul>
         </nav>
     </header>
-    <div class="who-we-are-content">
+
+    <div class="contact-us-content">
         <h2>Contact Us</h2>
+        <form class="contact-form" action="submit_form.php" method="POST">
+            <div class="form-group">
+                <div class="field">
+                    <label for="full_name">Full Name</label>
+                    <input type="text" name="full_name" id="full_name" placeholder="Full Name" required>
+                </div>
+                <div class="field">
+                    <label for="phone_number">Phone Number</label>
+                    <input type="text" name="phone_number" id="phone_number" placeholder="Phone Number" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="field">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" placeholder="Email Address" required>
+                </div>
+                <div class="field">
+                    <label for="service">Service</label>
+                    <select name="service" id="service" required>
+                        <option value="Training">Training</option>
+                        <option value="Consulting">Consulting</option>
+                        <option value="Support">Support</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <textarea name="message" id="message" placeholder="Message" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
     </div>
 </body>
 </html>
+
